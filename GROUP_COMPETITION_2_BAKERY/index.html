@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./asset/SCSS/style.css">
+
+    <!-- ICONS LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="site">
+
+        <header class="header" id="BackToTop">
+
+            <nav class="flex flex-ai-c flex-jc-sb container">
+
+                <div class="nav__left flex flex-ai-c">
+
+                    <a href="#" id="toggle" class="header__toggle hide-for-desktop">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+
+                    <a href="#" class="header__logo">
+                        <span>M</span>emories
+                    </a>
+                </div>
+
+                <div class="header__links hide-for-mobile">
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Location</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div class="header__search-and-cart flex flex-ai-c">
+                    <a href="#" class="search" title="Search">
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <a href="#" class="cart-shopping" title="Shopping Cart">
+                        <i class="ri-shopping-bag-line"><span>3</span></i>
+                    </a>
+                </div>
+
+
+            </nav>
+
+            <div class="header__mobile-menu">
+
+                <a href="#" class="close-toggle"><i class="ri-close-line"></i></a>
+
+                <div class="header__menu">
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Location</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Contact</a>
+                </div>
+
+            </div>
+
+
+        </header>
+
+        <section class="hero">
+
+            <div class="hero__slider-box">
+                
+                <button id="prev-slide" class="hero__slide-btn"><i class="ri-arrow-left-s-line"></i></button>
+
+                <div class="hero__slider-image-list">
+
+                    <div class="hero__slider-image-items flex flex-ai-c">
+                        <h1>Freshly baked everyday</h1>
+                    </div>
+
+                    <div class="hero__slider-image-items flex flex-ai-c">
+                        <h1>Cereal products</h1>
+                    </div>
+
+                    <div class="hero__slider-image-items flex flex-ai-c">
+                        <h1>Find your sweet</h1>
+                    </div>
+                    
+                    <div class="hero__slider-image-items flex flex-ai-c">
+                        <h1>Different kinds of products</h1>
+                    </div>
+                </div>
+
+                <div class="hero__slider-points flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <button id="next-slide" class="hero__slide-btn"><i class="ri-arrow-drop-right-line"></i></button>
+            </div>
+
+            <div class="hero__text container">
+                <p>Since 2002 we've been serving our customers the best quality freshly baked French food, traditionally made and presented with care.</p>
+            </div>
+        </section>
+
+        <section class="products">
+
+            <div class="container">
+
+                <h3 class="products__header">
+                    Products
+                </h3>
+
+                <div class="products__grid">
+
+                    <div class="products__grid-group">
+                        <a href="#"><img src="./asset/images/products_image_1.avif" alt=""></a>
+
+                        <div class="products__info flex flex-ai-c flex-jc-sb">
+                            <h3 class="products-name">Breads</h3>
+
+                            <p class="left-products">15 products</p>
+                        </div>
+                    </div>
+
+                    <div class="products__grid-group">
+                        <a href="#"><img src="./asset/images/products_image_2.avif" alt=""></a>
+
+                        <div class="products__info flex flex-ai-c flex-jc-sb">
+                            <h3 class="products-name">Pastries</h3>
+
+                            <p class="left-products">18 products</p>
+                        </div>
+                    </div>
+
+                    <div class="products__grid-group">
+                        <a href="#"><img src="./asset/images/products_image_3.jpg" alt=""></a>
+
+                        <div class="products__info flex flex-ai-c flex-jc-sb">
+                            <h3 class="products-name">Sandwiches</h3>
+
+                            <p class="left-products">15 products</p>
+                        </div>
+                    </div>
+
+                    <div class="products__grid-group">
+                        <a href="#"><img src="./asset/images/products_image_4.webp" alt=""></a>
+
+                        <div class="products__info flex flex-ai-c flex-jc-sb">
+                            <h3 class="products-name">Cookies</h3>
+
+                            <p class="left-products">15 products</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram-social-media">
+            <div class="instagram-social-media__grid container">
+                <div class="instagram-social-media__text">
+                    <h1>Instagram</h1>
+                    <p>Check our Profile</p>
+
+                    <div class="instagram-scan-code">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p><i class="ri-instagram-line"></i> <br>
+                            BTM
+                        </p>
+                        <img class="instagram-profile-code" src="./asset/images/instagram_profile.png"
+                            alt="Instagram Profile">
+                    </div>
+                </div>
+
+                <img class="image-1" src="./asset/images/instagram_image_1.jpg" alt="">
+                <img class="image-2" src="./asset/images/instagram_image_2.jpg" alt="">
+                <img class="image-3" src="./asset/images/instagram_image_3.jpg" alt="">
+
+
+            </div>
+        </section>
+
+        <footer class="footer">
+
+            <div class="container">
+
+                <div class="footer__sections">
+
+                    <div class="footer__links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Cookie policy</a>
+                    </div>
+
+                    <div class="footer__links">
+                        <a href="#">About</a>
+                        <a href="#">Menu</a>
+                        <a href="#">Delivery</a>
+                    </div>
+
+                    <div class="footer__links">
+                        <a href="#">Gallery</a>
+                        <a href="#">Contact</a>
+                    </div>
+
+                    <div class="footer__social-media-and-address">
+                        <div class="social-media">
+                            <a href="#"><i class="ri-instagram-line"></i></a>
+                            <a href="#"><i class="ri-facebook-circle-line"></i></a>
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                        </div>
+
+                        <p class="contact-number">+33 1 44 55 66 77 88</p>
+
+                        <p class="address">10, rue Antonie Villon, 70922 Paris</p>
+                    </div>
+
+                    <a href="#BackToTop" class="backtotop">
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="./asset/JS/main.js"></script>
+</body>
+
+</html>

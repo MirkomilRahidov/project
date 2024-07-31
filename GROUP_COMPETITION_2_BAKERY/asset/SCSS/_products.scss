@@ -1,0 +1,54 @@
+.products {
+    color: $White;
+    background-color: $DarkGrey;
+    padding-block: 4rem;
+
+    &__header {
+        font-size: 2rem;
+    }
+
+    &__grid {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 3rem;
+
+        @include breakpoints-up(medium) {
+            grid-template-columns: auto auto;
+            gap: 1rem;
+        }
+    }
+
+    &__grid-group {
+
+        transition: 200ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.020);
+        }
+
+        img {
+            width: 100%;
+            height: 363px;
+            object-fit: cover;
+
+            @include breakpoints-down(medium) {
+                height: auto;
+            }
+        }
+    }
+
+    &__info {
+        padding: 1rem 0;
+
+        .products-name {
+            font-size: 1.3rem;
+            font-weight: 200;
+        }
+
+        .left-products {
+            font-size: $font-sm;
+            color: $LightGrayish;
+        }
+    }
+}

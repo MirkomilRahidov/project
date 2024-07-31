@@ -1,0 +1,83 @@
+.footer {
+
+    padding-block: 4rem;
+
+    &__sections {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        @include breakpoints-down(medium) {
+            text-align: center;
+            grid-template-columns: 1fr;
+        }
+
+        @include breakpoints-up(medium) {
+            grid-template-columns: repeat(3, 1fr) auto;
+        }
+    }
+
+    &__links {
+
+        a {
+            display: block;
+            padding-block: 1rem;
+            font-size: $font-md;
+            color: $LightGrayish;
+            transition: color 200ms ease-in-out;
+
+            &:hover {
+                color: $VeryLightGrey;
+            }
+        }
+    }
+
+    &__social-media-and-address {
+
+        .social-media {
+            a {
+                font-size: 2rem;
+                color: $White;
+
+                &:not(:last-child) {
+                    margin-right: rem(20);
+                }
+            }
+        }
+
+        .contact-number,
+        .address {
+            font-size: $font-md;
+            color: $LightGrayish;
+        }
+
+        .contact-number {
+            padding-block: 1.3rem;
+        }
+
+    }
+
+
+    .backtotop {
+        width: rem(60);
+        padding: rem(20) 0;
+        margin-top: 3rem;
+
+        span {
+            display: block;
+            width: rem(30);
+            height: rem(2);
+            background-color: $LightGrayish;
+
+            &:first-child {
+                transform: rotate(-40deg);
+            }
+
+            &:last-child {
+                transform: rotate(40deg) translateX(rem(16)) translateY(rem(-16));
+
+            }
+        }
+    }
+
+}

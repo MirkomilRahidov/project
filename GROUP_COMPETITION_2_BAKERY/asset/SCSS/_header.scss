@@ -1,0 +1,196 @@
+.header{
+
+    nav{
+        padding-block: 2rem; 
+
+        @include breakpoints-down(medium){
+            padding-block: 1rem;
+        }
+    }
+
+    &__toggle{
+
+        // &.open  #toggle{
+        //     span{
+
+        //         &:first-child{
+        //             transform: rotate(45deg);
+        //         }
+        //         &:nth-child(2){
+        //             width: 0;
+        //         }
+        //         &:last-child{
+        //             transform: rotate(-45deg);
+        //         }
+        //     }
+        // }
+
+        span{
+            display: block;
+            width: 26px;
+            height: 3px;
+            background-color: $GrayishWhite;
+            transform-origin: 2px center;
+            transition: 300ms ease-in-out;
+
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+            &:nth-child(2){
+                width: rem(18);
+                transition-property: width;
+                transition-duration: 300ms;
+            }
+        }
+    }
+
+    &__logo{
+        
+        font-family: $font-logo-inter;
+        font-size: rem(30);
+        font-weight: 200;
+        color: $VeryLightGrey;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-left: rem(20);
+
+        @include breakpoints-down(medium){
+            font-size: rem(20);
+        }
+
+        span{
+            color: $White;
+        }
+
+    }
+
+    &__links{
+
+        a{
+            color: $LightGrayish;
+            font-size: $font-sm;
+            text-transform: uppercase;
+            transition: color 300ms ease-in-out;
+            letter-spacing: 1.5px;
+
+            &:not(:last-child){
+                margin-right: rem(20);
+            }
+
+            &:hover{
+                color: $VeryLightGrey;
+            }
+
+        }
+    }
+    
+    &__mobile-menu{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        width: 100%;
+        padding: 2rem 1rem;
+        z-index: 11111;
+        transition: 500ms ease-in-out;
+        background-color: rgba(128, 128, 128, 0);
+        backdrop-filter: blur(8px);
+        box-shadow: inset 1px 0px 10px 0px rgba(255,255,255,1);
+
+        @include breakpoints-up(medium){
+            width: rem(400);
+            left: -100%;
+        }
+
+        &.open{
+            right: 0;
+
+            @include breakpoints-up(medium){
+                left: 0;
+            }
+        }
+
+        .close-toggle{
+            color: $VeryLightGrey;
+            font-size: 2rem;
+            display: block;
+            text-align: end;
+            transition: color 300ms ease-in-out;
+
+            &:hover{
+                color: $White;
+            }
+        }
+    }
+    &__menu{
+        text-align: center;
+        padding-block: 2rem;
+
+        a{
+            display: block;
+            color: $LightGrayish;
+            font-size: $font-md;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 1rem 0;
+            transition: color 300ms ease-in-out;
+
+            &:hover{
+                color: $White;
+            }
+        }
+    }
+
+    &__search-and-cart{
+        gap: rem(30);
+
+        .search{
+
+            span{
+                display: block;
+                position: relative !important;
+                
+                &:first-child{
+                    width: rem(17);
+                    height: rem(17);
+                    border-radius: 50%;
+                    border: 2px solid $VeryLightGrey;
+                }
+
+                &:last-child{
+                    position: absolute;
+                    bottom: 2px;
+                    right: -13px;
+                    width: 10px;
+                    height: 1.5px;
+                    transform: rotate(40deg);
+                    background-color: $VeryLightGrey;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .cart-shopping{
+
+            color: $VeryLightGrey;
+            font-size: rem(22);
+
+            i{
+                position: relative;
+
+                span{
+                    position: absolute;
+                    bottom: rem(-10);
+                    right: 0;
+                    transform: translateX(rem(7));
+                    font-size: $font-sm;
+                    font-weight: 700;
+                    color: $Black;
+                    background-color: $White;
+                    padding: rem(2) rem(7);
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
